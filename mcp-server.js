@@ -134,3 +134,4 @@ Explain the bug and provide a corrected version of the code.`
 ------------------------------*/
 const transport = new StdioServerTransport();
 await server.connect(transport);
+console.error("MCP Code Assistant Server Started");
