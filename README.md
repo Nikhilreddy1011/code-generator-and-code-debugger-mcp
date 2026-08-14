@@ -125,11 +125,28 @@ GEMINI_API_KEY=your_gemini_api_key
 GEMINI_MODEL=gemini-2.5-flash
 ```
 
+The server exits immediately with a clear message if `GEMINI_API_KEY` is missing.
+
+### Optional tuning
+
+| Variable | Default | Purpose |
+| --- | --- | --- |
+| `GEMINI_MAX_OUTPUT_TOKENS` | `8192` | Output cap. Raise it if long files get truncated. |
+| `GEMINI_THINKING_BUDGET` | `2048` | Tokens Gemini 2.5 may spend reasoning before writing code. |
+| `GEMINI_TIMEOUT_MS` | `120000` | Aborts a hung request instead of blocking the client. |
+| `GEMINI_MAX_ATTEMPTS` | `4` | Retries on transient `429`/`5xx` errors, with exponential backoff. |
+
 ---
 
 ## ▶️ Run the MCP Server
 
 Start the MCP server:
+
+```
+npm start
+```
+
+or
 
 ```
 node mcp-server.js

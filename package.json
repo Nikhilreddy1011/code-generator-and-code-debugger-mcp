@@ -1,21 +1,24 @@
 {
   "name": "mcp-code-assistant",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "AI-powered MCP server providing code generation and debugging tools via Google Gemini",
+  "main": "mcp-server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node mcp-server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "mcp",
+    "gemini",
+    "code-generation",
+    "debugging"
+  ],
+  "author": "Nikhil Reddy",
+  "license": "MIT",
   "dependencies": {
     "@google/genai": "^1.44.0",
-    "@modelcontextprotocol/sdk": "^1.27.1",
+    "@modelcontextprotocol/sdk": "^1.30.0",
     "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "openai": "^6.27.0",
     "zod": "^4.3.6"
   }
 }
