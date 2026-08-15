@@ -32,7 +32,7 @@ It runs as a local Node.js process, talks to your AI editor over stdio using the
 
 ## 🧩 What is MCP?
 
-**Model Context Protocol (MCP)** is an open protocol (created by Anthropic) that standardizes how AI applications connect to external tools, data, and services. Before MCP, every AI app invented its own plugin format; a tool built for one app couldn't be reused in another .
+**Model Context Protocol (MCP)** is an open protocol (created by Anthropic) that standardizes how AI applications connect to external tools, data, and services. Before MCP, every AI app invented its own plugin format; a tool built for one app couldn't be reused in another.
 
 MCP fixes that with a simple client/server split:
 
